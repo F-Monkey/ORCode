@@ -4,7 +4,7 @@
 # step:
 
 ## 1: 将图片转成.tif 格式
-[generate_tif](generate_tif.png)
+![generate_tif](generate_tif.png)
 
 ## 2: 生成.box文件(确保out_put_file 参数与 *** 一致，方便jTessBoxEditorFX识别)
 cmd: tesseract [***.tif] [out_put_file] -l [exists_training_data] batch.nochop makebox   
@@ -12,7 +12,7 @@ cmd: tesseract [***.tif] [out_put_file] -l [exists_training_data] batch.nochop m
 eg: tesseract 111.tif my.font.exp0 -l chi_sim batch.nochop makebox
 
 ## 3: Box Editor 页面
-[box editor](box_editor.png)
+![box editor](box_editor.png)
 
 ## 4: 创建自定义字体(0 0 0 0 0 表示字体加粗倾斜等属性为0)
 echo font 0 0 0 0 0 >font_properties
